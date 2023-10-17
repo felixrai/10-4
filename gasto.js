@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     calculateSummaryButton.addEventListener("click", function () {
         const totalExpenses = expenses.reduce((total, expense) => total + expense.amount, 0);
         const summaryHTML = `
-            <h2>Resumo de Gastos</h2>
+            <h2>Resumo</h2>
             <p>Total de Gastos: R$ ${totalExpenses.toFixed(2)}</p>
             <p>Número de Gastos: ${expenses.length}</p>
         `;
